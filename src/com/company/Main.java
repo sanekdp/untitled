@@ -1,9 +1,6 @@
 package com.company;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
-import java.io.IOException;
 
 public class Main {
 
