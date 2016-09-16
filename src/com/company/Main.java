@@ -1,6 +1,5 @@
 package com.company;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -203,7 +202,6 @@ public class Main {
         {
             System.out.println(q.question);
             Answer[] answers =  q.answers;
-            int g = Arrays.asList(answers).indexOf(answers[2]);
             for (Answer a : answers)
                 System.out.println(a.number + ". " + a.ask);
             System.out.println("Ваш ответ: ");
