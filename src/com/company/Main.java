@@ -11,166 +11,182 @@ public class Main {
         Question data[] =  {
             new Question() {
                 {
-                    question = "Вопрос1";
+                    question = "Примитивный тип пример:";
                     answers = new Answer[] {
-                        new Answer(){{ number = 1; ask = "Ответ1"; result = false; note = "Патаму что ответ2"; }},
-                        new Answer(){{ number = 2; ask = "Ответ2"; result = true; }},
-                        new Answer(){{ number = 3; ask = "Ответ3"; result = false; note = "Патаму что ответ2"; }},
-                        new Answer(){{ number = 4; ask = "Ответ4"; result = false; note = "Патаму что ответ2"; }},
+                        new Answer(){{ number = 1; ask = "String"; result = false; note = "Примитивные типы данных: byte, short, int, long, char, float, douЫe и boolean."; }},
+                        new Answer(){{ number = 2; ask = "int"; result = true; }},
+                        new Answer(){{ number = 3; ask = "Object"; result = false; note = "Примитивные типы данных: byte, short, int, long, char, float, douЫe и boolean."; }},
+                        new Answer(){{ number = 4; ask = "class"; result = false; note = "Примитивные типы данных: byte, short, int, long, char, float, douЫe и boolean."; }},
                     };
                 }
             },
                 new Question() {
                     {
-                        question = "Вопрос2";
+                        question = "На сколько групп можно разделить примитивные типы ?";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "1"; result = false; note = "Примитивные типы можно разделить на 4 группы."; }},
+                                new Answer(){{ number = 2; ask = "2"; result = false; note = "Примитивные типы можно разделить на 4 группы."; }},
+                                new Answer(){{ number = 3; ask = "3"; result = false; note = "Примитивные типы можно разделить на 4 группы."; }},
+                                new Answer(){{ number = 4; ask = "4"; result = true; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос3";
+                        question = "Какая группа не относится к примитивным типам ?";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "Целые числа"; result = false; note = "Примитивные типы можно разделить на :\nЦелые числа\nЧисла с плавающей точкой\nСимволы\nЛогические значения"; }},
+                                new Answer(){{ number = 2; ask = "Классы"; result = true; }},
+                                new Answer(){{ number = 3; ask = "Числа с плавающей точкой"; result = false; note = "Примитивные типы можно разделить на :\nЦелые числа\nЧисла с плавающей точкой\nСимволы\nЛогические значения"; }},
+                                new Answer(){{ number = 4; ask = "Логические значения"; result = false; note = "Примитивные типы можно разделить на :\nЦелые числа\nЧисла с плавающей точкой\nСимволы\nЛогические значения"; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос4";
+                        question = "Сколько типов в группе примитивных чисел \"Целые числа\" ?";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "1"; result = false; note = "В \"Целых чисдах\" определены четыре типа: byte, short, int и long"; }},
+                                new Answer(){{ number = 2; ask = "2"; result = false; note = "В \"Целых чисдах\" определены четыре типа: byte, short, int и long"; }},
+                                new Answer(){{ number = 3; ask = "3"; result = false; note = "В \"Целых чисдах\" определены четыре типа: byte, short, int и long"; }},
+                                new Answer(){{ number = 4; ask = "4"; result = true; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос5";
+                        question = "Примитивный тип Символы пример :";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "\"Hello word\""; result = false; note = "Пример примитивного типа \"Символ\" --> 'c'"; }},
+                                new Answer(){{ number = 2; ask = "\"1\""; result = false; note = "Пример примитивного типа \"Символ\" --> 'c'"; }},
+                                new Answer(){{ number = 3; ask = "\"c\""; result = false; note = "Пример примитивного типа \"Символ\" --> 'c'"; }},
+                                new Answer(){{ number = 4; ask = "'c'"; result = true; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос6";
+                        question = "Диапозон допустимых значений типа int";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "от -922337203654775808 до 9223372036854775807"; result = false; note = "Диапозон допустимых значений типа int от -2147483648 до 2147483647"; }},
+                                new Answer(){{ number = 2; ask = "от -2147483648 до 2147483647"; result = true; }},
+                                new Answer(){{ number = 3; ask = "от -32768 до 32767"; result = false; note = "Диапозон допустимых значений типа int от -2147483648 до 2147483647"; }},
+                                new Answer(){{ number = 4; ask = "от - 128 до 127"; result = false; note = "Диапозон допустимых значений типа int от -2147483648 до 2147483647"; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос7";
+                        question = "Не правильное значение типа char";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "'X'"; result = false; note = "Это правильное значение типа char"; }},
+                                new Answer(){{ number = 2; ask = "88"; result = false; note = "Это правильное значение типа char это код символа в Unicode"; }},
+                                new Answer(){{ number = 3; ask = "\\u141"; result = true; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос8";
+                        question = "Не правильное объявление переменной";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "int а, b, с;"; result = false; note = "Такое объявление правльное."; }},
+                                new Answer(){{ number = 2; ask = "int d = 3, е, f = 5;"; result = false; note = "Такое объявление правльное."; }},
+                                new Answer(){{ number = 3; ask = "int i = 1, char c = 12;"; result = true; }},
+                                new Answer(){{ number = 4; ask = "int x = 3 * 12;"; result = false; note = "Такое объявление правльное."; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос9";
+                        question = "Правильно объявление массива";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "month_days[l] = 28;"; result = false; note = "Это присвоение значения элементу массива"; }},
+                                new Answer(){{ number = 2; ask = "int month_days[];"; result = true; }},
+                                new Answer(){{ number = 3; ask = "int month days[];"; result = false; note = "Переменная не может содержать пробел"; }},
+                                new Answer(){{ number = 4; ask = "int month_days[] = new int[];"; result = false; note = "Не указан размер создаваемого массива"; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос10";
+                        question = "х = 42 ;\nу = х++;\n\ny = ???";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "41"; result = false; note = "Сначало \"y\" присваевается значение \"x\" потом \"x\" увеличивается на 1"; }},
+                                new Answer(){{ number = 2; ask = "42"; result = true; }},
+                                new Answer(){{ number = 3; ask = "43"; result = false; note = "Сначало \"y\" присваевается значение \"x\" потом \"x\" увеличивается на 1"; }},
+                                new Answer(){{ number = 4; ask = "44"; result = false; note = "Сначало \"y\" присваевается значение \"x\" потом \"x\" увеличивается на 1"; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос11";
+                        question = "Где не оператор цикла?";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "for"; result = false; note = "for это оператор цикла"; }},
+                                new Answer(){{ number = 2; ask = "while"; result = false; note = "while это оператор цикла"; }},
+                                new Answer(){{ number = 3; ask = "switch"; result = true; }},
+                                new Answer(){{ number = 4; ask = "все выше циклы"; result = false; note = "оператор switch не является циклом"; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос12";
+                        question = "boolean b = false || (false == false); b = ???";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "true"; result = false; note = "b присвоится false все что после || анализироваться не будет"; }},
+                                new Answer(){{ number = 2; ask = "false"; result = true; }},
+                                new Answer(){{ number = 3; ask = "Ощибка компиляции"; result = false; note = "Это допустимое объявление переменной в Java"; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос13";
+                        question = "boolean ratio = true == false ? true != false : false == true;\nratio = ???";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "true"; result = false; note = "true == false это ложь. Вычисляем значение что стоит после \":\" false == true равно false"; }},
+                                new Answer(){{ number = 2; ask = "false"; result = true; }},
+                                new Answer(){{ number = 3; ask = "Ощибка компиляции"; result = false; note = "Это допустимое объявление переменной в Java"; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос14";
+                        question = "int i = 0;\n" +
+                                "        switch (i) {\n" +
+                                "            case 0:\n" +
+                                "                i+=2;\n" +
+                                "            case 1:\n" +
+                                "                i--;\n" +
+                                "                break;\n" +
+                                "            case 2:\n" +
+                                "                i++;\n" +
+                                "                break;\n" +
+                                "        }\ni = ???";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "0"; result = false; note = "i = 0 вычисляем \"i+=2\" i = 2 \n" +
+                                        "т.к. нет оператора break переходим к следующему case 1:\n"+"" +
+                                        "вычисляем \"i--\" i = 1 \n" +
+                                        "есть break выходим из switch"; }},
+                                new Answer(){{ number = 2; ask = "1"; result = true; }},
+                                new Answer(){{ number = 3; ask = "2"; result = false; note = "i = 0 вычисляем \"i+=2\" i = 2 \n" +
+                                        "т.к. нет оператора break переходим к следующему case 1:\n"+"" +
+                                        "вычисляем \"i--\" i = 1 \n" +
+                                        "есть break выходим из switch"; }},
+                                new Answer(){{ number = 4; ask = "3"; result = false; note = "i = 0 вычисляем \"i+=2\" i = 2 \n" +
+                                        "т.к. нет оператора break переходим к следующему case 1:\n"+"" +
+                                        "вычисляем \"i--\" i = 1 \n" +
+                                        "есть break выходим из switch"; }},
                         };
                     }
                 },
                 new Question() {
                     {
-                        question = "Вопрос15";
+                        question = "Где не допустимое объявление цикла";
                         answers = new Answer[] {
-                                new Answer(){{ number = 1; ask = "Ответ5"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 2; ask = "Ответ6"; result = true; }},
-                                new Answer(){{ number = 3; ask = "Ответ7"; result = false; note = "Патаму что ответ2"; }},
-                                new Answer(){{ number = 4; ask = "Ответ8"; result = false; note = "Патаму что ответ2"; }},
+                                new Answer(){{ number = 1; ask = "while(true){}"; result = false; note = "Это правильное объявление"; }},
+                                new Answer(){{ number = 2; ask = "for(int i = 0; i < 10; i++){}"; result = false;  note = "Это правильное объявление"; }},
+                                new Answer(){{ number = 3; ask = "for(;;){}"; result = false;  note = "Это правильное объявление"; }},
+                                new Answer(){{ number = 4; ask = "Все варианты объявления цикла верны"; result = true; }},
                         };
                     }
                 }
