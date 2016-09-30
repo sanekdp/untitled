@@ -6,7 +6,6 @@ import home300916.box.Box;
 import home300916.box.Cat;
 import home300916.box.FatCat;
 import home300916.builder.Bread;
-import home300916.cars.Car;
 import home300916.cars.Lorry;
 import home300916.human.Student;
 import home300916.vector.Point;
