@@ -21,11 +21,11 @@ public class Main {
         //testFatCat();
         //testVector();
 
-        testProduct();
+        testBuilder();
 
     }
 
-    private static void testProduct() {
+    private static void testBuilder() {
 
         //Product product = new Product.Builder("First", "Second").things3("Third").build();
         Bread bread1 = new Bread.Baker(3, 1, 1).additive("Корица").salt(1).build();
