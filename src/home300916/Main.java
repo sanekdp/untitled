@@ -5,6 +5,7 @@ import home300916.box.BigBox;
 import home300916.box.Box;
 import home300916.box.Cat;
 import home300916.box.FatCat;
+import home300916.builder.Bread;
 import home300916.cars.Car;
 import home300916.cars.Lorry;
 import home300916.human.Student;
@@ -18,7 +19,23 @@ public class Main {
         //testStudent();
         //testCat();
         //testFatCat();
-        testVector();
+        //testVector();
+
+        testProduct();
+
+    }
+
+    private static void testProduct() {
+
+        //Product product = new Product.Builder("First", "Second").things3("Third").build();
+        Bread bread1 = new Bread.Baker(3, 1, 1).additive("Корица").salt(1).build();
+        Bread bread2 = new Bread.Baker(2, 2, 1).salt(1).build();
+        Bread bread3 = new Bread.Baker(4, 1, 2).additive("Паприка").build();
+
+        bread1.getInfo();
+        bread2.getInfo();
+        bread3.getInfo();
+
     }
 
     private static void testVector() {
