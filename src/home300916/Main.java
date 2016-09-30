@@ -27,7 +27,6 @@ public class Main {
 
     private static void testBuilder() {
 
-        //Product product = new Product.Builder("First", "Second").things3("Third").build();
         Bread bread1 = new Bread.Baker(3, 1, 1).additive("Корица").salt(1).build();
         Bread bread2 = new Bread.Baker(2, 2, 1).salt(1).build();
         Bread bread3 = new Bread.Baker(4, 1, 2).additive("Паприка").build();
