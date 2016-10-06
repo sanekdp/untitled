@@ -33,9 +33,15 @@ public class Main {
     }
 
     private static Menu createMenu() {
-        Menu menu = new Menu(3);
-        menu.addFood(new Apple(100, 200));
-        menu.addFood(new Bread(1000, 500));
+        int numberItemsMenu = 3;
+        int nCalories, weight;
+        Menu menu = new Menu(numberItemsMenu);
+        nCalories = 100;
+        weight = 200;
+        menu.addFood(new Apple(nCalories, weight));
+        nCalories = 1000;
+        weight = 500;
+        menu.addFood(new Bread(nCalories, weight));
         return menu;
     }
 }
