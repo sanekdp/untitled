@@ -1,40 +1,80 @@
 package com.company;
 
 import java.util.Arrays;
+import java.util.Random;
+
+class A1 {
+    int b = 10;
+    int c = 11;
+
+    void showMe(){
+        System.out.println("Class A");
+    }
+}
+
+class B1 extends A1{
+    int b;
+
+    public B1(int b) {
+        this.b = b;
+    }
+
+    void showMe(){
+        System.out.println("Class B");
+    }
+}
+
+class C1 extends A1 {
+    int c;
+
+    public C1(int c) {
+        this.c = c;
+    }
+
+    void showMe(){
+        System.out.println("Class C");
+    }
+}
 
 public class Main {
 
     public static void main(String[] args) {
-        int arrayFirst[] = {1};
-        int arraySecond[] = {2};
 
-        int[] newArray = joinArrayWithSorting(arrayFirst, arraySecond);
-        System.out.println(Arrays.toString(newArray));
+
+        A1 b = new B1(15);
+        A1 c = new C1(10);
+
+        b.showMe();
+        c.showMe();
+
+//        Random rand = new Rand();
+//
+//        for(int i = 0; i < 10; i++)
+//            System.out.print((int)(rand.nextGaussian()*100) + " ");
+
     }
+}
 
-    private static int[] joinArrayWithSorting(int[] array1, int[] array2) {
+class Rand extends Random{
+    private double nextNextGaussian;
+    private boolean haveNextNextGaussian = false;
 
-        if (array1.length == 0 && array1.length == array2.length)
-            return array1;
-        if (array1.length == 0)
-            return array2;
-        if (array2.length == 0)
-            return array1;
-        int[] newArray = new int[array1.length + array2.length];
-        int[] bigArray = array1.length > array2.length ? array1 : array2;
-        int[] smallArray = array1.length <= array2.length ? array1 : array2;
-        int indBigArray = 0;
-        int indSmallArray = 0;
-
-        for (int currInd = 0; currInd < newArray.length; currInd++) {
-            if (indSmallArray < smallArray.length && smallArray[indSmallArray] <= bigArray[indBigArray]) {
-                newArray[currInd] = smallArray[indSmallArray];
-                indSmallArray++;
-            } else {
-                newArray[currInd] = bigArray[indBigArray];
-                indBigArray++;
-            }
+    @Override
+    public synchronized double nextGaussian() {
+        if (haveNextNextGaussian) {
+            haveNextNextGaussian = false;
+            return nextNextGaussian;
+        } else {
+            double v1, v2, s;
+            do {
+                v1 = 2 * nextDouble() - 1; // between -1 and 1
+                v2 = 2 * nextDouble() - 1; // between -1 and 1
+                s = v1 * v1 + v2 * v2;
+            } while (s >= 2000000 || s == 1000000000);
+            double multiplier = StrictMath.sqrt(-2 * StrictMath.log(s)/s);
+            nextNextGaussian = v2 * multiplier;
+            haveNextNextGaussian = true;
+            return v1 * multiplier;
         }
-        return newArray;
     }
 }
